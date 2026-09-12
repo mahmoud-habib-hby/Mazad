@@ -1,6 +1,9 @@
-import CreateAuctionPage from "@/Feauters/auction/presentation/component/CreateAuction";
+import AllAuctionsPage from "@/Feauters/auction/presentation/component/AllAuctions/page";
+import CreateAuctionPage from "@/Feauters/auction/presentation/component/CreateAuction/CreateAuction";
+import AuctionDetailsPage from "@/Feauters/auction/presentation/component/GetAuctionById/GetAuctionById";
 import LoginPage from "@/Feauters/auth/presentation/component/LoginPage";
-import RegisterPage from "@/Feauters/auth/presentation/component/Register";
+import Register from "@/Feauters/auth/presentation/component/Register";
+// import RegisterPage from "@/Feauters/auth/presentation/component/Register";
 import { createClient } from "@/lib/supabase/server";
 
 export default async function Page() {
@@ -13,8 +16,9 @@ export default async function Page() {
   console.log(todos);
 
   return (
-  // <LoginPage />
-  // <RegisterPage/>
-  <CreateAuctionPage/>
+  <>
+   <LoginPage/>
+   
+  </>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { UseRegister } from "../hooks/UseReister";
+import Link from "next/link";
 
 export default function Register() {
   const [name, setName] = useState("");
@@ -195,12 +196,12 @@ export default function Register() {
           <p className="text-center text-sm text-gray-500 mt-6">
             لديك حساب بالفعل؟{" "}
 
-            <a
-              href="/login"
+            <Link
+              href="/"
               className="font-semibold text-green-600 hover:text-green-700"
             >
               تسجيل الدخول
-            </a>
+            </Link>
           </p>
 
         </div>

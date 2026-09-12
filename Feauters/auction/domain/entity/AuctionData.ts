@@ -1,12 +1,20 @@
+export interface AuctionBid {
+  id: string;
+  bidder_id: string;
+  amount: number;
+  created_at: string;
+}
 
-
-  export interface AuctionData {
+export interface AuctionData {
+  id: string;
+  seller_id: string;
   title: string;
-  description?: string;
-  image_url?: string;
+  description: string;
+  category: string;
   starting_price: number;
+  Winner_id?: string | null;
   current_price: number;
-  start_time: string;
-  end_time: string;
-  status: "not_ready" | "active" | "ended";
+  status: string;
+  images: string[];
+  bids?: AuctionBid[];
 }

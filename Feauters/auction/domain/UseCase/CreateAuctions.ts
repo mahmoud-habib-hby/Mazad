@@ -1,4 +1,4 @@
-import { AuctionData } from "../entity/AuctionData";
+import { CreateAuctionData } from "../entity/CreateAuctionsData";
 import { IAuctionRepository } from "../repo/AuctionRepo";
 
 
@@ -6,7 +6,7 @@ import { IAuctionRepository } from "../repo/AuctionRepo";
 export class CreateAuctionUseCase {
   constructor(private auctions: IAuctionRepository) {}
 
-  async execute(data: AuctionData) {
+  async execute(data: CreateAuctionData) {
     return await this.auctions.createAuction(data);
   }
 }
