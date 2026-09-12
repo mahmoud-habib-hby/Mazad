@@ -9,8 +9,8 @@ import { createClient } from "@/lib/supabase/client";
 export default function LoginPage() {
   const router = useRouter();
 
-  const [email, setEmail] = useState("mh55@gmail.com");
-  const [password, setPassword] = useState("555555");
+  const [email, setEmail] = useState("mh77@gmail.com");
+  const [password, setPassword] = useState("7777777");
 
   const { mutateAsync, isPending, error } = UseLogin();
 
