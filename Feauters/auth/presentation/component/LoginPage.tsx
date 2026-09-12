@@ -9,8 +9,8 @@ import { createClient } from "@/lib/supabase/client";
 export default function LoginPage() {
   const router = useRouter();
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("mh55@gmail.com");
+  const [password, setPassword] = useState("555555");
 
   const { mutateAsync, isPending, error } = UseLogin();
 
@@ -53,7 +53,6 @@ export default function LoginPage() {
       className="flex min-h-screen items-center justify-center bg-[#f5efe6] px-4 py-10"
     >
       <div className="w-full max-w-md">
-
         <div className="mb-8 text-center">
           <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#315C45] text-xl font-black text-white shadow-lg shadow-[#315C45]/20">
             M
@@ -69,7 +68,6 @@ export default function LoginPage() {
         </div>
 
         <div className="overflow-hidden rounded-3xl border border-[#e5d8c8] bg-[#fffaf3] p-6 shadow-xl shadow-[#4a4036]/5 sm:p-8">
-
           <div className="mb-7">
             <h2 className="text-2xl font-bold text-[#2f2924]">
               تسجيل الدخول
@@ -81,7 +79,6 @@ export default function LoginPage() {
           </div>
 
           <form onSubmit={handleLogin} className="space-y-5">
-
             <div>
               <label
                 htmlFor="email"
@@ -125,13 +122,6 @@ export default function LoginPage() {
                 >
                   كلمة المرور
                 </label>
-
-                <a
-                  href="/forgot-password"
-                  className="text-sm font-semibold text-[#315C45] transition hover:text-[#264B38]"
-                >
-                  نسيت كلمة المرور؟
-                </a>
               </div>
 
               <input

@@ -1,6 +1,7 @@
 import ConditionalNavbar from "@/Feauters/Navbar/CondationalNavbar";
 import "./globals.css";
 import Providers from "./Provider";
+import Footer from "@/Feauters/Footer/footer";
 
 
 
@@ -15,6 +16,7 @@ export default function RootLayout({
         <Providers>
           <ConditionalNavbar />
           {children}
+          <Footer/>
         </Providers>
       </body>
     </html>
