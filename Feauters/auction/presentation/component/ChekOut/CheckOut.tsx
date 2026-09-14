@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 
 import { useCheckOut } from "../../hooks/useCheckOut";
 import { useGetAuctionById } from "../../hooks/useActionById";
@@ -11,7 +11,7 @@ export default function CheckOutPage() {
   const params = useParams();
 
   const auctionId = params.id as string;
-
+const route=useRouter();
   const getAuction = useGetAuctionById();
   const checkOut = useCheckOut();
 
@@ -55,6 +55,7 @@ export default function CheckOutPage() {
       setCardNumber("");
       setExpiryDate("");
       setCvv("");
+      route.push("/my-purchases/unpaid");
     } catch (error) {
       console.error("CHECKOUT ERROR:", error);
 

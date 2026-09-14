@@ -733,7 +733,7 @@ function AuctionCard({
             عرض المزاد
           </button>
 
-          {isOwner && auction.status !== "sold" && (
+          {isOwner && auction.status !== "sold"&& auction.status !== "ended" && (
             <button
               type="button"
               onClick={onEdit}
@@ -748,7 +748,7 @@ function AuctionCard({
           )}
         </div>
 
-        {isOwner && auction.status === "sold" && (
+      {isOwner && (auction.status === "sold" || auction.status === "ended") && (
           <div
             className={`mt-3 rounded-xl border px-4 py-3 text-center ${
               isDark
@@ -763,7 +763,8 @@ function AuctionCard({
                   : "text-gray-500"
               }`}
             >
-              المزاد مباع لا يمكن التعديل
+             المزاد لا يمكن تعديله بعد بيعه او حذفه
+             
             </p>
           </div>
         )}

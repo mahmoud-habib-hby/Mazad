@@ -849,7 +849,8 @@ export default function AuctionDetailsPage() {
                     </button>
                   </>
                 ) : isOwner &&
-                  auction.status === "sold" ? (
+  (auction.status === "sold" ||
+    auction.status === "ended")? (
                   <div
                     className={`border px-5 py-5 text-center ${
                       isDark
@@ -874,19 +875,10 @@ export default function AuctionDetailsPage() {
                           : "text-[#9B4A4A]"
                       }`}
                     >
-                      لا يمكن حذف المزاد بعد بيعه
+                    لا يمكن حذفه بعد بيغعه او حذفه
+                    
                     </p>
 
-                    <p
-                      className={`mt-1 text-xs leading-6 ${
-                        isDark
-                          ? "text-[#7D8982]"
-                          : "text-[#939A95]"
-                      }`}
-                    >
-                      تم بيع هذا المزاد بنجاح، لذلك لا
-                      يمكن حذفه.
-                    </p>
                   </div>
                 ) : isOwner ? (
                   <>

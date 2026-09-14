@@ -648,37 +648,6 @@ export default function ProfilePage() {
           <div
             className={`rounded-2xl border p-5 shadow-sm ${cardBg} ${border}`}
           >
-            <p className={`text-xs ${secondaryText}`}>
-              البيانات
-            </p>
-
-            <p
-              className={`mt-2 text-sm font-semibold ${
-                isDark
-                  ? "text-[#73B88A]"
-                  : "text-[#2f2924]"
-              }`}
-            >
-              محدثة
-            </p>
-          </div>
-
-          <div
-            className={`rounded-2xl border p-5 shadow-sm ${cardBg} ${border}`}
-          >
-            <p className={`text-xs ${secondaryText}`}>
-              الأمان
-            </p>
-
-            <p
-              className={`mt-2 text-sm font-semibold ${
-                isDark
-                  ? "text-[#73B88A]"
-                  : "text-[#2f2924]"
-              }`}
-            >
-              محمي
-            </p>
           </div>
         </div>
       </div>
