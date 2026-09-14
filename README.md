@@ -1,34 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mazad - Online Auction Platform
 
-## Getting Started
+Mazad is a full-stack online auction platform built with **Next.js, TypeScript, and Supabase**.
 
-First, run the development server:
+## 🚀 Features
+
+* User Authentication
+* Create and manage auctions
+* Image uploads
+* Real-time bidding
+* Auction filtering and management
+* Payment status management
+* Arabic / RTL support
+
+## 🛠️ Technologies
+
+* Next.js
+* TypeScript
+* React
+* Supabase
+* Tailwind CSS
+* TanStack Query
+* OOP
+* Clean Architecture
+* Feature-Based Architecture
+
+## 🏗️ Architecture
+
+The project follows **Clean Architecture** and **Feature-Based Architecture**, with **OOP principles** to keep the code maintainable, scalable, and well-organized.
+
+## ⚙️ Getting Started
 
 ```bash
+git clone https://github.com/mahmoud-habib-hby/Mazad.git
+cd Mazad
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open http://localhost:3000 with your browser to see the result.
+Create a `.env.local` file with your Supabase credentials:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load Geist, a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-* [Next.js Documentation](https://nextjs.org/docs)
-* [Learn Next.js](https://nextjs.org/learn)
-
-You can check out the [Next.js GitHub repository](https://github.com/vercel/next.js).
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new) from the creators of Next.js.
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
